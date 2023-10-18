@@ -2,7 +2,7 @@ describe('solver', () => {
 
 	it('should load all decoders', (done) => {
 		create_test('img',
-			'universal-img',
+			'universal-img_1',
 			"solver_1",
 			"libjxl_1;libpng_1;libjpeg_1;openjpeg_1",
 			"https://bevara.ddns.net/test-signals/JXL/test.jxl",
