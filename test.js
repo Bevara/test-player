@@ -26,6 +26,8 @@ function create_test(tag, extension, using_attribute, with_atribute, test_file, 
       img.setAttribute("use-worker", "");
     }
 
+    img.setAttribute("test", "");
+
     document.body.appendChild(img);
     console.log(using_attribute + ";" + with_atribute + " : Tag " + tag + " extended by " + extension + " has been added to the DOM");
     img.decodingPromise.then(src => {
@@ -56,7 +58,7 @@ function create_test(tag, extension, using_attribute, with_atribute, test_file, 
                 console.log(using_attribute + ";" + with_atribute + " : hex values of result is " + resultHex + " and expected is " + refHex);
                 expect(resultHex).to.equal(refHex);
                 console.log(using_attribute + ";" + with_atribute + " : Test OK");
-                //document.body.removeChild(img);
+                document.body.removeChild(img);
                 resolve();
               });
           });
