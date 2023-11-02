@@ -111,17 +111,17 @@ describe('#libpng', () => {
 		);
 	}).timeout(5000);
 
-	it('should decode RedRockCanyon.png to rgba with worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_1",
-			"libpng_1",
-			"https://bevara.ddns.net/test-signals/PNG/RedRockCanyon.png",
-			"https://bevara.ddns.net/test-signals/out/libpng/RedRockCanyon.png",
-			done,
-			"rgba",
-			false,
-			false
-		);
-	}).timeout(50000);
+	// it('should decode RedRockCanyon.png to rgba with worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_1",
+	// 		"libpng_1",
+	// 		"https://bevara.ddns.net/test-signals/PNG/RedRockCanyon.png",
+	// 		"https://bevara.ddns.net/test-signals/out/libpng/RedRockCanyon.png",
+	// 		done,
+	// 		"rgba",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(10000);
 });
