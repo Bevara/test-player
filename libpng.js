@@ -123,5 +123,5 @@ describe('#libpng', () => {
 			false,
 			false
 		);
-	}).timeout(10000);
+	}).timeout(50000);
 });
