@@ -1,4 +1,4 @@
-describe('#libjxl', () => {
+describe('#liba52', () => {
 	it('should decode Motivation.ac3 to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
