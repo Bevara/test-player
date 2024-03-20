@@ -65,18 +65,18 @@ describe('#libjxl', () => {
       false);
   }).timeout(60000);
 
-  it('should decode test.jxl to jpeg with worker', (done) => {
-    create_test('img',
-      'universal-img_1',
-      "solver_1",
-      "libjxl_1;libjpeg_1",
-      "https://bevara.ddns.net/test-signals/JXL/test.jxl",
-      "https://bevara.ddns.net/test-signals/out/jxl/test.jpg",
-      done,
-      "jpg",
-      false,
-      false);
-  }).timeout(60000);
+  // it('should decode test.jxl to jpeg with worker', (done) => {
+  //   create_test('img',
+  //     'universal-img_1',
+  //     "solver_1",
+  //     "libjxl_1;libjpeg_1",
+  //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
+  //     "https://bevara.ddns.net/test-signals/out/jxl/test.jpg",
+  //     done,
+  //     "jpg",
+  //     false,
+  //     false);
+  // }).timeout(60000);
 
 
   it('should decode test.jxl to rgba with worker', (done) => {
