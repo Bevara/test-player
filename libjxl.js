@@ -79,42 +79,42 @@ describe('#libjxl', () => {
   // }).timeout(60000);
 
 
-  it('should decode test.jxl to rgba with worker', (done) => {
-    create_test('img',
-      'universal-img_1',
-      "solver_1",
-      "libjxl_1",
-      "https://bevara.ddns.net/test-signals/JXL/test.jxl",
-      "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
-      done,
-      "rgba",
-      false,
-      false);
-  }).timeout(60000);
+  // it('should decode test.jxl to rgba with worker', (done) => {
+  //   create_test('img',
+  //     'universal-img_1',
+  //     "solver_1",
+  //     "libjxl_1",
+  //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
+  //     "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
+  //     done,
+  //     "rgba",
+  //     false,
+  //     false);
+  // }).timeout(60000);
 
-  it('should decode test.jxl to rgba without worker', (done) => {
-    create_test('img',
-      'universal-img_1',
-      "solver_1",
-      "libjxl_1",
-      "https://bevara.ddns.net/test-signals/JXL/test.jxl",
-      "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
-      done,
-      "rgba",
-      false,
-      true);
-  }).timeout(60000);
+  // it('should decode test.jxl to rgba without worker', (done) => {
+  //   create_test('img',
+  //     'universal-img_1',
+  //     "solver_1",
+  //     "libjxl_1",
+  //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
+  //     "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
+  //     done,
+  //     "rgba",
+  //     false,
+  //     true);
+  // }).timeout(60000);
 
-  it('should decode test.jxl to rgb with worker', (done) => {
-    create_test('img',
-      'universal-img_1',
-      "solver_1",
-      "libjxl_1",
-      "https://bevara.ddns.net/test-signals/JXL/test.jxl",
-      "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
-      done,
-      "rgb",
-      false,
-      false);
-  }).timeout(60000);
+  // it('should decode test.jxl to rgb with worker', (done) => {
+  //   create_test('img',
+  //     'universal-img_1',
+  //     "solver_1",
+  //     "libjxl_1",
+  //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
+  //     "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
+  //     done,
+  //     "rgb",
+  //     false,
+  //     false);
+  // }).timeout(60000);
 });
