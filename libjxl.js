@@ -3,7 +3,7 @@ describe('#libjxl', () => {
   it('should decode test.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_1",
+      "solver_minimal_1",
       "libjxl_1;libpng_1",
       "https://bevara.ddns.net/test-signals/JXL/test.jxl",
       "https://bevara.ddns.net/test-signals/out/jxl/test.png",
@@ -16,7 +16,7 @@ describe('#libjxl', () => {
   it('should decode test.jxl to png without worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_1",
+      "solver_minimal_1",
       "libjxl_1;libpng_1",
       "https://bevara.ddns.net/test-signals/JXL/test.jxl",
       "https://bevara.ddns.net/test-signals/out/jxl/test.png",
@@ -29,7 +29,7 @@ describe('#libjxl', () => {
   it('should decode test2.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_1",
+      "solver_minimal_1",
       "libjxl_1;libpng_1",
       "https://bevara.ddns.net/test-signals/JXL/test2.jxl",
       "https://bevara.ddns.net/test-signals/out/jxl/test2.png",
@@ -42,7 +42,7 @@ describe('#libjxl', () => {
   it('should decode test3.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_1",
+      "solver_minimal_1",
       "libjxl_1;libpng_1",
       "https://bevara.ddns.net/test-signals/JXL/test3.jxl",
       "https://bevara.ddns.net/test-signals/out/jxl/test3.png",
@@ -55,7 +55,7 @@ describe('#libjxl', () => {
   it('should decode red-room.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_1",
+      "solver_minimal_1",
       "libjxl_1;libpng_1",
       "https://bevara.ddns.net/test-signals/JXL/red-room.jxl",
       "https://bevara.ddns.net/test-signals/out/jxl/red-room.png",
@@ -68,7 +68,7 @@ describe('#libjxl', () => {
   // it('should decode test.jxl to jpeg with worker', (done) => {
   //   create_test('img',
   //     'universal-img_1',
-  //     "solver_1",
+  //     "solver_minimal_1",
   //     "libjxl_1;libjpeg_1",
   //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
   //     "https://bevara.ddns.net/test-signals/out/jxl/test.jpg",
@@ -82,7 +82,7 @@ describe('#libjxl', () => {
   // it('should decode test.jxl to rgba with worker', (done) => {
   //   create_test('img',
   //     'universal-img_1',
-  //     "solver_1",
+  //     "solver_minimal_1",
   //     "libjxl_1",
   //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
   //     "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
@@ -95,7 +95,7 @@ describe('#libjxl', () => {
   // it('should decode test.jxl to rgba without worker', (done) => {
   //   create_test('img',
   //     'universal-img_1',
-  //     "solver_1",
+  //     "solver_minimal_1",
   //     "libjxl_1",
   //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
   //     "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",
@@ -108,7 +108,7 @@ describe('#libjxl', () => {
   // it('should decode test.jxl to rgb with worker', (done) => {
   //   create_test('img',
   //     'universal-img_1',
-  //     "solver_1",
+  //     "solver_minimal_1",
   //     "libjxl_1",
   //     "https://bevara.ddns.net/test-signals/JXL/test.jxl",
   //     "https://bevara.ddns.net/test-signals/out/jxl/canvas.png",

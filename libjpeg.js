@@ -3,7 +3,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to png with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_1",
+			"solver_minimal_1",
 			"libpng_1;libjpeg_1",
 			"https://bevara.ddns.net/test-signals/Freedom.jpg",
 			"https://bevara.ddns.net/test-signals/Freedom.png",
@@ -17,7 +17,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to png without worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_1",
+			"solver_minimal_1",
 			"libpng_1;libjpeg_1",
 			"https://bevara.ddns.net/test-signals/Freedom.jpg",
 			"https://bevara.ddns.net/test-signals/Freedom.png",
@@ -31,7 +31,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_1",
+			"solver_minimal_1",
 			"libpng_1;libjpeg_1",
 			"https://bevara.ddns.net/test-signals/Freedom.jpg",
 			"https://bevara.ddns.net/test-signals/out/libjpeg/Freedom-canvas.png",
@@ -45,7 +45,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to rgba with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_1",
+			"solver_minimal_1",
 			"libpng_1;libjpeg_1",
 			"https://bevara.ddns.net/test-signals/Freedom.jpg",
 			"https://bevara.ddns.net/test-signals/out/libjpeg/Freedom-canvas.png",
