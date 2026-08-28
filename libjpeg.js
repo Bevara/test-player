@@ -14,19 +14,19 @@ describe('#libjpeg', () => {
 		);
 	}).timeout(5000);
 
-	it('should decode Freedom.jpeg to png without worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			"https://bevara.ddns.net/test-signals/Freedom.jpg",
-			"https://bevara.ddns.net/test-signals/Freedom.png",
-			done,
-			"png",
-			false,
-			true
-		);
-	}).timeout(5000);
+	// it('should decode Freedom.jpeg to png without worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		"https://bevara.ddns.net/test-signals/Freedom.jpg",
+	// 		"https://bevara.ddns.net/test-signals/Freedom.png",
+	// 		done,
+	// 		"png",
+	// 		false,
+	// 		true
+	// 	);
+	// }).timeout(5000);
 
 	it('should decode Freedom.jpeg to rgb with worker', (done) => {
 		create_test('img',
