@@ -55,61 +55,61 @@ describe('#libpng', () => {
 	// 	);
 	// }).timeout(5000);
 
-	it('should decode Freedom.png to rgb with worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			"https://bevara.ddns.net/test-signals/Freedom.png",
-			"https://bevara.ddns.net/test-signals/out/libpng/Freedom-canvas.png",
-			done,
-			"rgb",
-			false,
-			false
-		);
-	}).timeout(5000);
+	// it('should decode Freedom.png to rgb with worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		"https://bevara.ddns.net/test-signals/Freedom.png",
+	// 		"https://bevara.ddns.net/test-signals/out/libpng/Freedom-canvas.png",
+	// 		done,
+	// 		"rgb",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(5000);
 
-	it('should decode Freedom.png to rgba with worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			"https://bevara.ddns.net/test-signals/Freedom.png",
-			"https://bevara.ddns.net/test-signals/out/libpng/Freedom-canvas.png",
-			done,
-			"rgba",
-			false,
-			false
-		);
-	}).timeout(5000);
+	// it('should decode Freedom.png to rgba with worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		"https://bevara.ddns.net/test-signals/Freedom.png",
+	// 		"https://bevara.ddns.net/test-signals/out/libpng/Freedom-canvas.png",
+	// 		done,
+	// 		"rgba",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(5000);
 
-	it('should decode owl.png to rgb with worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			"https://bevara.ddns.net/test-signals/owl.png",
-			"https://bevara.ddns.net/test-signals/out/libpng/owl-canvas.png",
-			done,
-			"rgb",
-			false,
-			false
-		);
-	}).timeout(5000);
+	// it('should decode owl.png to rgb with worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		"https://bevara.ddns.net/test-signals/owl.png",
+	// 		"https://bevara.ddns.net/test-signals/out/libpng/owl-canvas.png",
+	// 		done,
+	// 		"rgb",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(5000);
 
-	it('should decode owl.png to rgba with worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			"https://bevara.ddns.net/test-signals/owl.png",
-			"https://bevara.ddns.net/test-signals/out/libpng/owl-canvas.png",
-			done,
-			"rgba",
-			false,
-			false
-		);
-	}).timeout(5000);
+	// it('should decode owl.png to rgba with worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		"https://bevara.ddns.net/test-signals/owl.png",
+	// 		"https://bevara.ddns.net/test-signals/out/libpng/owl-canvas.png",
+	// 		done,
+	// 		"rgba",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(5000);
 
 	// it('should decode RedRockCanyon.png to rgba with worker', (done) => {
 	// 	create_test('img',

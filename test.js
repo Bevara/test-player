@@ -1,7 +1,8 @@
 
 function create_test(tag, extension, using_attribute, with_atribute, test_file, reference_file, done, out, useCache, noWorker) {
-  new Promise(function (resolve) {
-    const img = document.createElement(tag, { "is": extension });
+  let img;
+  new Promise(function (resolve, reject) {
+    img = document.createElement(tag, { "is": extension });
     img.setAttribute("src", test_file);
 
     if (using_attribute) {
@@ -42,13 +43,16 @@ function create_test(tag, extension, using_attribute, with_atribute, test_file, 
       }
     })
       .then((responses) => {
+        if (responses.length === 0) {
+          return;
+        }
         console.log(using_attribute + ";" + with_atribute + " : Both test and reference signal has been processed");
         arrayBuffers = responses.map(response => response.arrayBuffer());
-        Promise.all(arrayBuffers)
+        return Promise.all(arrayBuffers)
           .then(buffers => {
             console.log(using_attribute + ";" + with_atribute + " : Calculating hash of the results");
             hashedBuffers = buffers.map(buffer => crypto.subtle.digest('SHA-256', buffer));
-            Promise.all(hashedBuffers)
+            return Promise.all(hashedBuffers)
               .then(hashedResults => {
                 console.log(using_attribute + ";" + with_atribute + " : Transforming hashes of to hex values");
                 const result = new Uint8Array(hashedResults[0]);
@@ -58,11 +62,24 @@ function create_test(tag, extension, using_attribute, with_atribute, test_file, 
                 console.log(using_attribute + ";" + with_atribute + " : hex values of result is " + resultHex + " and expected is " + refHex);
                 expect(resultHex).to.equal(refHex);
                 console.log(using_attribute + ";" + with_atribute + " : Test OK");
-                document.body.removeChild(img);
                 resolve();
               });
           });
-      });
+      })
+      .catch(reject);
   })
-    .then(done);
+    .then(
+      () => {
+        if (img.parentNode) {
+          img.parentNode.removeChild(img);
+        }
+        done();
+      },
+      (err) => {
+        if (img.parentNode) {
+          img.parentNode.removeChild(img);
+        }
+        done(err);
+      }
+    );
 }
