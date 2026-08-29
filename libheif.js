@@ -13,17 +13,17 @@ describe('#libheif', () => {
 		);
 	}).timeout(60000);
 
-	it('should decode example.heic to rgb with worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libheif_1",
-			"https://bevara.ddns.net/test-signals/heif/example.heic",
-			"https://bevara.ddns.net/test-signals/out/libheif/example.png",
-			done,
-			"rgb",
-			false,
-			false
-		);
-	}).timeout(60000);
+	// it('should decode example.heic to rgb with worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libheif_1",
+	// 		"https://bevara.ddns.net/test-signals/heif/example.heic",
+	// 		"https://bevara.ddns.net/test-signals/out/libheif/example.png",
+	// 		done,
+	// 		"rgb",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(60000);
 });

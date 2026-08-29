@@ -1,4 +1,6 @@
 
+window.TS = 'https://bevara.ddns.net/test-signals/';
+
 function create_test(tag, extension, using_attribute, with_atribute, test_file, reference_file, done, out, useCache, noWorker) {
   let img;
   new Promise(function (resolve, reject) {
