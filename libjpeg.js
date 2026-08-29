@@ -34,7 +34,7 @@ describe('#libjpeg', () => {
 	// 		"solver_minimal_1",
 	// 		"libpng_1;libjpeg_1",
 	// 		"https://bevara.ddns.net/test-signals/Freedom.jpg",
-	// 		"http://localhost:8000/out/libjpeg/Freedom-canvas.png",
+	// 		"https://bevara.ddns.net/test-signals/out/libjpeg/Freedom-canvas.png",
 	// 		done,
 	// 		"rgb",
 	// 		false,
