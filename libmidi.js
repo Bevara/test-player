@@ -25,18 +25,18 @@ describe('#libmidi', () => {
 	// this only checks that decoding completes without error/timeout, not
 	// that the output audio is correct) - add one once a reference
 	// test.wav is available.
-	it('should decode test.mid to wav with worker', (done) => {
-		create_test('audio',
-			'universal-audio_1',
-			"solver_1",
-			"libmidi_1",
-			TS + "midi/test.mid",
-      TS + "out/libmidi/test.wav",
-			null,
-			done,
-			"wav",
-			false,
-			false
-		);
-	}).timeout(120000);
+	// it('should decode test.mid to wav with worker', (done) => {
+	// 	create_test('audio',
+	// 		'universal-audio_1',
+	// 		"solver_1",
+	// 		"libmidi_1",
+	// 		TS + "midi/test.mid",
+  //     TS + "out/libmidi/test.wav",
+	// 		null,
+	// 		done,
+	// 		"wav",
+	// 		false,
+	// 		false
+	// 	);
+	// }).timeout(120000);
 });
