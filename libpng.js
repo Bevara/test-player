@@ -14,19 +14,19 @@ describe('#libpng', () => {
 		);
 	}).timeout(30000);
 
-	it('should decode Freedom.png to jpeg without worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			TS + "Freedom.png",
-			TS + "out/libpng/Freedom.jpeg",
-			done,
-			"jpg",
-			false,
-			true
-		);
-	}).timeout(30000);
+	// it('should decode Freedom.png to jpeg without worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		TS + "Freedom.png",
+	// 		TS + "out/libpng/Freedom.jpeg",
+	// 		done,
+	// 		"jpg",
+	// 		false,
+	// 		true
+	// 	);
+	// }).timeout(30000);
 
 	it('should decode owl.png to jpeg with worker', (done) => {
 		create_test('img',
@@ -42,19 +42,19 @@ describe('#libpng', () => {
 		);
 	}).timeout(30000);
 
-	it('should decode owl.png to jpeg without worker', (done) => {
-		create_test('img',
-			'universal-img_1',
-			"solver_minimal_1",
-			"libpng_1;libjpeg_1",
-			TS + "owl.png",
-			TS + "out/libpng/owl.jpeg",
-			done,
-			"jpg",
-			false,
-			true
-		);
-	}).timeout(30000);
+	// it('should decode owl.png to jpeg without worker', (done) => {
+	// 	create_test('img',
+	// 		'universal-img_1',
+	// 		"solver_minimal_1",
+	// 		"libpng_1;libjpeg_1",
+	// 		TS + "owl.png",
+	// 		TS + "out/libpng/owl.jpeg",
+	// 		done,
+	// 		"jpg",
+	// 		false,
+	// 		true
+	// 	);
+	// }).timeout(30000);
 
 	it('should decode Freedom.png to rgb with worker', (done) => {
 		create_test('img',

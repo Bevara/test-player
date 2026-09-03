@@ -9,7 +9,7 @@ describe('#libde265', () => {
 		create_test('video',
 			'universal-video_1',
 			"solver_1",
-			"libde265_1;isobmff_1;ffmpeg-x264_1",
+			"libde265_1;isobmff_1;libx264_1",
 			TS + "HEVC/hevcds_720p30_2M_videoonly.mp4",
 			null,
 			done,
