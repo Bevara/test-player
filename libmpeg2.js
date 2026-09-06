@@ -23,4 +23,23 @@ describe('#libmpeg2', () => {
 			['vide']
 		);
 	}).timeout(60000);
+
+	// H.262 and MPEG-2 Video are the same specification, so this is the same
+	// decoder on a raw H.262 elementary stream. It is here because of a bug it
+	// found: a picture only becomes displayable once libmpeg2 has seen what
+	// follows it, and a stream that ends without a sequence end code - which
+	// is what ffmpeg's raw MPEG-2 output is - left the last pictures held back.
+	// 50 frames in, 48 out. dec_mpeg2.c now feeds a sequence end code after
+	// the data, and the average PSNR against a native decode went from 55.0 to
+	// 61.5 dB: the two frames ffmpeg had to repeat to compare equal-length
+	// sequences were what dragged it down.
+	it('should decode testcard.m2v (raw H.262 ES) with worker', (done) => {
+		create_structural_video_test(
+			"solver_1",
+			"libmpeg2_1;isobmff_1;libx264_1",
+			TS + "H262/testcard.m2v",
+			done,
+			['vide']
+		);
+	}).timeout(60000);
 });
