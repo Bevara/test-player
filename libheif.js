@@ -9,6 +9,12 @@ describe('#libheif', () => {
 	// "video tag" tests in libx264.js/theora.js, just decode-only instead
 	// of re-encode - so this decodes both images via canvas and compares
 	// actual pixels rather than file bytes.
+	//
+	// solver_1, not solver_minimal_1: libheif_1 imports some fifty libc++
+	// symbols (ostream operator<< overloads, std::thread and
+	// condition_variable plumbing, the exception hierarchy's RTTI) that
+	// solver_minimal no longer exports - the block that carried them for
+	// this one filter was dropped, and solver_1 resolves them all.
 	it('should decode example_flower_hevc to rgb with worker', (done) => {
 		let img;
 		const referenceUrl = "https://bevara.ddns.net/test-signals/out/libheif/example_flower_hevc.png";
@@ -27,7 +33,7 @@ describe('#libheif', () => {
 
 		img = document.createElement('img', { "is": "universal-img_1" });
 		img.setAttribute("src", "https://bevara.ddns.net/test-signals/heif/example_flower_hevc.heif");
-		img.setAttribute("using", "solver_minimal_1");
+		img.setAttribute("using", "solver_1");
 		img.setAttribute("with", "libheif_1");
 		img.setAttribute("script-directory", "http://localhost:9876/base/build/dist/");
 		img.setAttribute("out", "rgb");
@@ -61,7 +67,7 @@ describe('#libheif', () => {
 	// it('should decode example.heic to rgb with worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"solver_1",
 	// 		"libheif_1",
 	// 		"https://bevara.ddns.net/test-signals/heif/example.heic",
 	// 		"https://bevara.ddns.net/test-signals/out/libheif/example.png",
