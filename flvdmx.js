@@ -39,7 +39,7 @@ describe('#flvdmx', () => {
 	it('should decode sample_960x400_ocean_with_audio.flv (Sorenson H.263 + MP3) with worker', (done) => {
 		create_structural_video_test(
 			"solver_1",
-			"flvdmx_1;ffmpeg-h26x_1;isobmff_1;libx264_1",
+			"flvdmx_1;ffmpeg-h26x_1;libmad_1;isobmff_1;libx264_1",
 			TS + "FLV/sample_960x400_ocean_with_audio.flv",
 			done,
 			['vide', 'soun']
