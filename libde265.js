@@ -8,7 +8,7 @@ describe('#libde265', () => {
 	it('should decode hevcds_720p30_2M_videoonly.mp4 with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libde265_1;isobmff_1;libx264_1",
 			TS + "HEVC/hevcds_720p30_2M_videoonly.mp4",
 			null,

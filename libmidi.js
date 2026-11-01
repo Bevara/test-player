@@ -1,6 +1,6 @@
 describe('#libmidi', () => {
 	// Loading libmidi_1.wasm as a GPAC dynamic-library filter under
-	// solver_minimal_1 (-sMAIN_MODULE=2) needed two fixes, both symbols
+	// mm_solver_minimal_1.0.1 (-sMAIN_MODULE=2) needed two fixes, both symbols
 	// this filter's TiMidity++/DUMB code references via the GOT.mem
 	// import mechanism (a separate resolution path from regular "env"
 	// function imports - see solver_minimal/exports.cmake): 'stdin' and
@@ -28,7 +28,7 @@ describe('#libmidi', () => {
 	// it('should decode test.mid to wav with worker', (done) => {
 	// 	create_test('audio',
 	// 		'universal-audio_1',
-	// 		"solver_1",
+	// 		"mm_solver_1.0.1",
 	// 		"libmidi_1",
 	// 		TS + "midi/test.mid",
   //     TS + "out/libmidi/test.wav",

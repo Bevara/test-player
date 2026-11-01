@@ -2,15 +2,15 @@ describe('#libalac', () => {
 	// Byte-hash comparison (create_test with "wav"): a WAV out of this chain is
 	// reproducible, unlike the PNG the image filters produce.
 	//
-	// Note the graph: "isobmff_1;libalac_1" on solver_1, not solver_minimal_1.
+	// Note the graph: "isobmff_1;libalac_1" on mm_solver_1.0.1, not mm_solver_minimal_1.0.1.
 	// That is not a preference, it is a requirement: isobmff imports about
-	// fifty GPAC symbols that solver_minimal_1 does not export (gf_m2ts_mux_*,
+	// fifty GPAC symbols that mm_solver_minimal_1.0.1 does not export (gf_m2ts_mux_*,
 	// gf_isom_*text*, gf_sei_*, gf_sha1_*, oggpack_read...). With the minimal
 	// solver the module cannot be linked, and emscripten's own
 	// reportUndefinedSymbols throws while trying to report it - the failure
 	// surfaces as "TypeError: Cannot read properties of undefined (reading
-	// 'value')" from inside solver_minimal_1.js, which names nothing. The
-	// isobmff video tests (libde265, libx264) already use solver_1 for the
+	// 'value')" from inside mm_solver_minimal_1.0.1.js, which names nothing. The
+	// isobmff video tests (libde265, libx264) already use mm_solver_1.0.1 for the
 	// same reason.
 	//
 	// Where the reference comes from: ALAC is lossless, so the decode was
@@ -20,7 +20,7 @@ describe('#libalac', () => {
 	it('should decode testcard.m4a to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_1",
+			"mm_solver_1.0.1",
 			"isobmff_1;libalac_1",
 			TS + "ALAC/testcard.m4a",
 			TS + "out/libalac/testcard.wav",

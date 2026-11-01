@@ -5,7 +5,7 @@ describe('#librecoil', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"librecoil_1",
 			TS + "ILBM/testcard_uncompressed.iff",
 			TS + "out/librecoil/testcard_uncompressed.png",
@@ -18,7 +18,7 @@ describe('#librecoil', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"librecoil_1",
 			TS + "DEGAS/testcard.pi1",
 			TS + "out/librecoil/testcard_pi1.png",
@@ -38,7 +38,7 @@ describe('#librecoil', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"librecoil_1",
 			TS + "MSP/testcard.msp",
 			TS + "out/librecoil/testcard_msp.png",

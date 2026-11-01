@@ -6,7 +6,7 @@ describe('#libwebp', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libwebp_1",
 			TS + "WEBP/testcard_lossy.webp",
 			TS + "out/libwebp/testcard_lossy.png",

@@ -6,7 +6,7 @@ describe('#libdca', () => {
 	it('should decode ff-16b-2c-48000hz.dts to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libdca_1",
 			TS + "DTS/ff-16b-2c-48000hz.dts",
 			TS + "out/libdca/ff-16b-2c-48000hz.wav",

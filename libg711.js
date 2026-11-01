@@ -41,7 +41,7 @@ describe('#libg711', () => {
 		it('should decode ' + label + ' .au to wav with worker', (done) => {
 			create_test('audio',
 				'universal-audio_1',
-				"solver_minimal_1",
+				"mm_solver_minimal_1.0.1",
 				"libg711_1",
 				TS + "AU/testcard_" + name + ".au",
 				TS + "out/libg711/testcard_" + name + ".wav",

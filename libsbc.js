@@ -15,7 +15,7 @@ describe('#libsbc', () => {
 	it('should decode testcard.sbc to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libsbc_1",
 			TS + "SBC/testcard.sbc",
 			TS + "out/libsbc/testcard.wav",

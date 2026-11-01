@@ -3,7 +3,7 @@ describe('#libopus', () => {
 	it('should decode ff-16b-2c-44100hz.opus to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"ogg_1;libopus_1",
 			TS + "ff-16b-2c-44100hz.opus",
 			TS + "out/libopus/ff-16b-2c-44100hz.wav",
@@ -17,7 +17,7 @@ describe('#libopus', () => {
 	it('should decode ff-16b-1c-44100hz.opus to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"ogg_1;libopus_1",
 			TS + "ff-16b-1c-44100hz.opus",
 			TS + "out/libopus/ff-16b-1c-44100hz.wav",

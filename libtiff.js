@@ -6,7 +6,7 @@ describe('#libtiff', () => {
 	it('should decode CCITT_1.TIF to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libtiff_1",
 			TS + "CCITT_1.TIF",
 			TS + "out/libtiff/CCITT_1.rgb",
@@ -20,7 +20,7 @@ describe('#libtiff', () => {
 	it('should decode G4.TIF to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libtiff_1",
 			TS + "G4.TIF",
 			TS + "out/libtiff/G4.rgb",
@@ -34,7 +34,7 @@ describe('#libtiff', () => {
 	it('should decode G32D.TIF to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libtiff_1",
 			TS + "G32D.TIF",
 			TS + "out/libtiff/G32D.rgb",
@@ -48,7 +48,7 @@ describe('#libtiff', () => {
 	it('should decode FLAG_T24.TIF to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libtiff_1",
 			TS + "FLAG_T24.TIF",
 			TS + "out/libtiff/FLAG_T24.rgb",
@@ -62,7 +62,7 @@ describe('#libtiff', () => {
 	it('should decode XING_T24.TIF to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libtiff_1",
 			TS + "XING_T24.TIF",
 			TS + "out/libtiff/XING_T24.rgb",

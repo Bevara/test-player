@@ -2,7 +2,7 @@ describe('#libmad', () => {
 	// it('should decode Radioactive.mp3 to wav without worker', (done) => {
 	// 	create_test('audio',
 	// 		'universal-audio_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libmad_1",
 	// 		"https://bevara.ddns.net/test-signals/Radioactive.mp3",
 	// 		"https://bevara.ddns.net/test-signals/out/maddec/Radioactive.wav",

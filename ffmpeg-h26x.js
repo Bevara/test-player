@@ -19,11 +19,11 @@ describe('#ffmpeg-h26x', () => {
 	// same files: 59.4 dB for H.261, 59.5 dB for H.263, both through the full
 	// chain including x264's own re-encoding.
 	//
-	// solver_1, not solver_minimal_1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	it('should decode testcard.avi (H.261) with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"avidmx_1;ffmpeg-h26x_1;isobmff_1;libx264_1",
 			TS + "H261/testcard.avi",
 			done,
@@ -33,7 +33,7 @@ describe('#ffmpeg-h26x', () => {
 
 	it('should decode testcard.avi (H.263) with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"avidmx_1;ffmpeg-h26x_1;isobmff_1;libx264_1",
 			TS + "H263/testcard.avi",
 			done,

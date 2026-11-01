@@ -14,7 +14,7 @@ describe('#libpsd', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpsd_1",
 			TS + "PSD/testcard_rle.psd",
 			TS + "out/libpsd/testcard_rle.png",

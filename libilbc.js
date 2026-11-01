@@ -2,7 +2,7 @@ describe('#libilbc', () => {
 	// Byte-hash comparison (create_test with "wav"): a WAV out of this chain is
 	// reproducible, unlike the PNG the image filters produce.
 	//
-	// Whole-file decoder on solver_minimal_1: iLBC has no container beyond the
+	// Whole-file decoder on mm_solver_minimal_1.0.1: iLBC has no container beyond the
 	// nine-byte "#!iLBC20\n" / "#!iLBC30\n" header that names the mode, and the
 	// filter reads that rather than guessing - 38 and 50 bytes divide too many
 	// stream lengths for a guess to be safe.
@@ -24,7 +24,7 @@ describe('#libilbc', () => {
 	it('should decode testcard.lbc to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libilbc_1",
 			TS + "ILBC/testcard.lbc",
 			TS + "out/libilbc/testcard.wav",

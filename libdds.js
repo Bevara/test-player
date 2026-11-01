@@ -14,7 +14,7 @@ describe('#libdds', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libdds_1",
 			TS + "DDS/kodim23_bc1.dds",
 			TS + "out/libdds/kodim23_bc1.png",

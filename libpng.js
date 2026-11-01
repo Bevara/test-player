@@ -3,7 +3,7 @@ describe('#libpng', () => {
 	it('should decode Freedom.png to jpeg with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "Freedom.png",
 			TS + "out/libpng/Freedom.jpeg",
@@ -17,7 +17,7 @@ describe('#libpng', () => {
 	// it('should decode Freedom.png to jpeg without worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libpng_1;libjpeg_1",
 	// 		TS + "Freedom.png",
 	// 		TS + "out/libpng/Freedom.jpeg",
@@ -31,7 +31,7 @@ describe('#libpng', () => {
 	it('should decode owl.png to jpeg with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "owl.png",
 			TS + "out/libpng/owl.jpeg",
@@ -45,7 +45,7 @@ describe('#libpng', () => {
 	// it('should decode owl.png to jpeg without worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libpng_1;libjpeg_1",
 	// 		TS + "owl.png",
 	// 		TS + "out/libpng/owl.jpeg",
@@ -59,7 +59,7 @@ describe('#libpng', () => {
 	it('should decode Freedom.png to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1",
 			TS + "Freedom.png",
 			TS + "out/libpng/Freedom-canvas.png",
@@ -88,7 +88,7 @@ describe('#libpng', () => {
 	// it('should decode Freedom.png to rgba with worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libpng_1",
 	// 		TS + "Freedom.png",
 	// 		TS + "out/libpng/Freedom-canvas.png",
@@ -102,7 +102,7 @@ describe('#libpng', () => {
 	it('should decode owl.png to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1",
 			TS + "owl.png",
 			TS + "out/libpng/owl-canvas.png",
@@ -117,7 +117,7 @@ describe('#libpng', () => {
 	// it('should decode owl.png to rgba with worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libpng_1",
 	// 		TS + "owl.png",
 	// 		TS + "out/libpng/owl-canvas.png",
@@ -132,7 +132,7 @@ describe('#libpng', () => {
 	// it('should decode RedRockCanyon.png to rgba with worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libpng_1",
 	// 		TS + "PNG/RedRockCanyon.png",
 	// 		TS + "out/libpng/RedRockCanyon.png",

@@ -6,7 +6,7 @@ describe('#libamr', () => {
 	it('should decode ff-16b-1c-8000hz.amr to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libamr_1",
 			TS + "ff-16b-1c-8000hz.amr",
 			TS + "out/libamr/ff-16b-1c-8000hz.wav",

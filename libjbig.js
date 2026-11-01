@@ -6,7 +6,7 @@ describe('#libjbig', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libjbig_1",
 			TS + "JBIG/testcard.jbg",
 			TS + "out/libjbig/testcard.png",

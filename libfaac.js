@@ -10,7 +10,7 @@ describe('#libfaac', () => {
 	it('should encode geminiani48.wav to AAC-LC in mp4 with worker', (done) => {
 		const el = document.createElement('audio', { "is": "universal-audio_1" });
 		el.setAttribute("src", TS + "wav/geminiani48.wav");
-		el.setAttribute("using", "solver_1");
+		el.setAttribute("using", "mm_solver_1.0.1");
 		el.setAttribute("with", "rfpcm_1;libfaac_1;isobmff_1");
 		el.setAttribute("out", "mp4");
 		el.setAttribute("script-directory", "http://localhost:9876/base/build/dist/");

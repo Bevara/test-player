@@ -7,7 +7,7 @@ describe('#libbpg', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libbpg_1",
 			TS + "bpg/photo.bpg",
 			TS + "out/libbpg/photo.png",

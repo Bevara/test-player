@@ -3,7 +3,7 @@ describe('#libjxl', () => {
   it('should decode test.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1;libpng_1",
       TS + "JXL/test.jxl",
       TS + "out/jxl/test.png",
@@ -16,7 +16,7 @@ describe('#libjxl', () => {
   it('should decode test.jxl to png without worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1;libpng_1",
       TS + "JXL/test.jxl",
       TS + "out/jxl/test.png",
@@ -29,7 +29,7 @@ describe('#libjxl', () => {
   it('should decode test2.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1;libpng_1",
       TS + "JXL/test2.jxl",
       TS + "out/jxl/test2.png",
@@ -42,7 +42,7 @@ describe('#libjxl', () => {
   it('should decode test3.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1;libpng_1",
       TS + "JXL/test3.jxl",
       TS + "out/jxl/test3.png",
@@ -55,7 +55,7 @@ describe('#libjxl', () => {
   it('should decode red-room.jxl to png with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1;libpng_1",
       TS + "JXL/red-room.jxl",
       TS + "out/jxl/red-room.png",
@@ -68,7 +68,7 @@ describe('#libjxl', () => {
   it('should decode test.jxl to jpeg with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1;libjpeg_1",
       TS + "JXL/test.jxl",
       TS + "out/jxl/test.jpg",
@@ -81,7 +81,7 @@ describe('#libjxl', () => {
   it('should decode test.jxl to rgb with worker', (done) => {
     create_test('img',
       'universal-img_1',
-      "solver_minimal_1",
+      "mm_solver_minimal_1.0.1",
       "libjxl_1",
       TS + "JXL/test.jxl",
       TS + "out/jxl/canvas.png",
@@ -97,7 +97,7 @@ describe('#libjxl', () => {
   // it('should decode test.jxl to rgba with worker', (done) => {
   //   create_test('img',
   //     'universal-img_1',
-  //     "solver_minimal_1",
+  //     "mm_solver_minimal_1.0.1",
   //     "libjxl_1",
   //     TS + "JXL/test.jxl",
   //     TS + "out/jxl/canvas.png",
@@ -110,7 +110,7 @@ describe('#libjxl', () => {
   // it('should decode test.jxl to rgba without worker', (done) => {
   //   create_test('img',
   //     'universal-img_1',
-  //     "solver_minimal_1",
+  //     "mm_solver_minimal_1.0.1",
   //     "libjxl_1",
   //     TS + "JXL/test.jxl",
   //     TS + "out/jxl/canvas.png",

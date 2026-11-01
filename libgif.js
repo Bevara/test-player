@@ -6,7 +6,7 @@ describe('#libgif', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libgif_1",
 			TS + "GIF/testcard_256colors.gif",
 			TS + "out/libgif/testcard_256colors.png",
@@ -25,7 +25,7 @@ describe('#libgif', () => {
 	it('should decode animated_8frames.gif through the video path with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libgif_1;libx264_1",
 			TS + "GIF/animated_8frames.gif",
 			null,

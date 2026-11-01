@@ -24,7 +24,7 @@ describe('#libspeex', () => {
 	it('should decode testcard_wb.spx to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"ogg_1;libspeex_1",
 			TS + "SPX/testcard_wb.spx",
 			TS + "out/libspeex/testcard_wb.wav",

@@ -1,6 +1,6 @@
 describe('#libisac', () => {
 	// Byte-hash comparison (create_test with "wav"), whole-file decoder on
-	// solver_minimal_1, same shape as libilbc and libsilk.
+	// mm_solver_minimal_1.0.1, same shape as libilbc and libsilk.
 	//
 	// iSAC has no library and no file format, and both facts shaped this
 	// filter. It was removed from WebRTC in 2022 and nothing packages it, so
@@ -20,7 +20,7 @@ describe('#libisac', () => {
 	it('should decode testcard.isac to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libisac_1",
 			TS + "ISAC/testcard.isac",
 			TS + "out/libisac/testcard.wav",

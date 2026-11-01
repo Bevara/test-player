@@ -9,7 +9,7 @@ describe('#libaom', () => {
 	// so only 'vide' is checked.
 	it('should decode CityHall_640x360.webm with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libaom_1;webmdmx_1;isobmff_1;libx264_1",
 			TS + "AV1/CityHall_640x360.webm",
 			done,

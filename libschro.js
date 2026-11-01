@@ -4,7 +4,7 @@ describe('#libschro', () => {
 	// decoder always needs the encoder (libx264_1) and the mp4 muxer
 	// (isobmff_1) in the graph, and the check is functional.
 	//
-	// solver_1, not solver_minimal_1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	//
 	// Dirac, not VC-2. schroedinger 1.0.11 predates the standardisation of
@@ -28,7 +28,7 @@ describe('#libschro', () => {
 	// reference at ~64 dB PSNR - x264's re-encoding loss and nothing else.
 	it('should decode testcard.drc with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libschro_1;isobmff_1;libx264_1",
 			TS + "DIRAC/testcard.drc",
 			done,

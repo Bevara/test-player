@@ -6,7 +6,7 @@ describe('#libxmp', () => {
 	it('should decode ode2ptk.mod to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libxmp_1",
 			TS + "MOD/ode2ptk.mod",
 			TS + "out/libxmp/ode2ptk.wav",

@@ -12,7 +12,7 @@ describe('#libutvideo', () => {
 	// the BITMAPINFOHEADER extra data. libutvideo_1 declares those fourccs
 	// (ULY0/ULY2/ULY4, ULH0/ULH2/ULH4, ULRG) as its input codec ids.
 	//
-	// solver_1, not solver_minimal_1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	//
 	// Where the numbers come from: the signal is 50 frames of 320x180 encoded
@@ -25,7 +25,7 @@ describe('#libutvideo', () => {
 	// getting that wrong would collapse the U and V PSNR, not leave it at 62.
 	it('should decode testcard.avi with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"avidmx_1;libutvideo_1;isobmff_1;libx264_1",
 			TS + "UTVIDEO/testcard.avi",
 			done,

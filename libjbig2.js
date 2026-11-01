@@ -6,7 +6,7 @@ describe('#libjbig2', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libjbig2_1",
 			TS + "JBIG2/annex-h.jbig2",
 			TS + "out/libjbig2/annex-h.png",

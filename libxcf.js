@@ -27,7 +27,7 @@ describe('#libxcf', () => {
 			create_pixel_test(
 				'img',
 				'universal-img_1',
-				"solver_minimal_1",
+				"mm_solver_minimal_1.0.1",
 				"libxcf_1",
 				TS + signal,
 				TS + "out/libxcf/" + ref + ".png",

@@ -5,7 +5,7 @@ describe('#libape', () => {
 	it('should decode ff-16b-2c-44100hz.ape to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libape_1",
 			TS + "APE/ff-16b-2c-44100hz.ape",
 			TS + "out/libape/ff-16b-2c-44100hz.wav",

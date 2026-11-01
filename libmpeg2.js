@@ -16,7 +16,7 @@ describe('#libmpeg2', () => {
 	// period) without error.
 	it('should decode centaur_1.mpg (raw MPEG ES) with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libmpeg2_1;isobmff_1;libx264_1",
 			TS + "mpeg1/centaur_1.mpg",
 			done,
@@ -35,7 +35,7 @@ describe('#libmpeg2', () => {
 	// sequences were what dragged it down.
 	it('should decode testcard.m2v (raw H.262 ES) with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libmpeg2_1;isobmff_1;libx264_1",
 			TS + "H262/testcard.m2v",
 			done,

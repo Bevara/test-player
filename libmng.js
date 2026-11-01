@@ -9,7 +9,7 @@ describe('#libmng', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libmng_1",
 			TS + "MNG/testcard_vlc.mng",
 			TS + "out/libmng/testcard_vlc.png",
@@ -28,7 +28,7 @@ describe('#libmng', () => {
 		create_pixel_test(
 			'img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libmng_1",
 			TS + "MNG/testcard.jng",
 			TS + "out/libmng/testcard_jng.png",
@@ -45,7 +45,7 @@ describe('#libmng', () => {
 	it('should decode animated_4frames.mng through the video path with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libmng_1;libx264_1",
 			TS + "MNG/animated_4frames.mng",
 			null,

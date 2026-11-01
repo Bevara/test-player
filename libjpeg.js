@@ -4,7 +4,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to png with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "Freedom.jpg",
 			TS + "out/libjpeg/Freedom-fromjpg.png",
@@ -18,7 +18,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to png without worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "Freedom.jpg",
 			TS + "out/libjpeg/Freedom-fromjpg.png",
@@ -32,7 +32,7 @@ describe('#libjpeg', () => {
 	it('should decode Freedom.jpeg to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "Freedom.jpg",
 			TS + "out/libjpeg/Freedom-canvas.png",
@@ -47,7 +47,7 @@ describe('#libjpeg', () => {
 	// it('should decode Freedom.jpeg to rgba with worker', (done) => {
 	// 	create_test('img',
 	// 		'universal-img_1',
-	// 		"solver_minimal_1",
+	// 		"mm_solver_minimal_1.0.1",
 	// 		"libpng_1;libjpeg_1",
 	// 		TS + "Freedom.jpg",
 	// 		TS + "out/libjpeg/Freedom-canvas.png",
@@ -78,7 +78,7 @@ describe('#libjpeg', () => {
 	it('should decode a JPEG XT profile C base layer to rgb with worker', (done) => {
 		create_pixel_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "JXT/testcard_profileC.jpg",
 			TS + "out/libjpeg/testcard_profileC.png",
@@ -90,7 +90,7 @@ describe('#libjpeg', () => {
 	it('should decode a JPEG XT lossless-residual base layer to rgb with worker', (done) => {
 		create_pixel_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libpng_1;libjpeg_1",
 			TS + "JXT/testcard_lossless_residual.jpg",
 			TS + "out/libjpeg/testcard_lossless_residual.png",

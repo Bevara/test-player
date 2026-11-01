@@ -4,7 +4,7 @@ describe('#libdavs2', () => {
 	// always needs the encoder (libx264_1) and the mp4 muxer (isobmff_1) in the
 	// graph, and the check is functional - that frames traverse the chain.
 	//
-	// solver_1, not solver_minimal_1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	//
 	// The signal holds 50 frames of 320x180 and all 50 come out: the mp4 this
@@ -13,7 +13,7 @@ describe('#libdavs2', () => {
 	// x264's own re-encoding accounts for.
 	it('should decode testcard.avs2 with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libdavs2_1;isobmff_1;libx264_1",
 			TS + "AVS2/testcard.avs2",
 			done,

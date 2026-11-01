@@ -2,7 +2,7 @@ describe('#libsilk', () => {
 	// Byte-hash comparison (create_test with "wav"): a WAV out of this chain is
 	// reproducible, unlike the PNG the image filters produce.
 	//
-	// Whole-file decoder on solver_minimal_1, like libilbc: a .silk file is
+	// Whole-file decoder on mm_solver_minimal_1.0.1, like libilbc: a .silk file is
 	// the nine bytes "#!SILK_V3" then, per packet, a 16-bit little-endian
 	// length and that many bytes. Nothing else - no rate, no packet duration.
 	// The duration needs no guess, because the decoder says when it has run
@@ -26,7 +26,7 @@ describe('#libsilk', () => {
 	it('should decode testcard.silk to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libsilk_1",
 			TS + "SILK/testcard.silk",
 			TS + "out/libsilk/testcard.wav",

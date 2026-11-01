@@ -14,7 +14,7 @@ describe('#liblc3', () => {
 	it('should decode testcard.lc3 to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"liblc3_1",
 			TS + "LC3/testcard.lc3",
 			TS + "out/liblc3/testcard.wav",

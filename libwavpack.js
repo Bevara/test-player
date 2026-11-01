@@ -5,7 +5,7 @@ describe('#libwavpack', () => {
 	it('should decode ff-16b-2c-44100hz.wv to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libwavpack_1",
 			TS + "WV/ff-16b-2c-44100hz.wv",
 			TS + "out/libwavpack/ff-16b-2c-44100hz.wav",

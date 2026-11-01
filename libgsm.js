@@ -13,7 +13,7 @@ describe('#libgsm', () => {
 	it('should decode testcard.gsm to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libgsm_1",
 			TS + "GSM/testcard.gsm",
 			TS + "out/libgsm/testcard.wav",

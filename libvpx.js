@@ -8,7 +8,7 @@ describe('#libvpx', () => {
 	// has no audio track, so only 'vide' is checked.
 	it('should decode UshaikaRiverEmb_640x360.webm (VP9) with worker', (done) => {
 		create_structural_video_test(
-			"solver_1",
+			"mm_solver_1.0.1",
 			"libvpx_1;webmdmx_1;isobmff_1;libx264_1",
 			TS + "VP9/UshaikaRiverEmb_640x360.webm",
 			done,

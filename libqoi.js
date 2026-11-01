@@ -17,7 +17,7 @@ describe('#libqoi', () => {
 	it('should decode qoi_logo.qoi to rgba with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libqoi_1",
 			TS + "qoi/qoi_logo.qoi",
 			null,

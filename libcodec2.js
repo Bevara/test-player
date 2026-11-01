@@ -12,13 +12,13 @@ describe('#libcodec2', () => {
 	// That is larger than the +-1 the other codecs show, and expected: Codec 2
 	// is a floating-point sinusoidal coder, so rounding differences accumulate
 	// through LPC and synthesis. Part of it is this build's own doing -
-	// solver_minimal_1 exports no single-precision maths, so codec2_stubs.c
+	// mm_solver_minimal_1.0.1 exports no single-precision maths, so codec2_stubs.c
 	// routes cosf/sinf/expf and friends through their double versions, which
 	// is *more* precise than the native single-precision path rather than less.
 	it('should decode testcard.c2 to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libcodec2_1",
 			TS + "C2/testcard.c2",
 			TS + "out/libcodec2/testcard.wav",

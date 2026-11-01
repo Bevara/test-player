@@ -6,7 +6,7 @@ describe('#libmpc', () => {
 	it('should decode ff-16b-2c-44100hz.mpc to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"solver_minimal_1",
+			"mm_solver_minimal_1.0.1",
 			"libmpc_1",
 			TS + "MPC/ff-16b-2c-44100hz.mpc",
 			TS + "out/libmpc/ff-16b-2c-44100hz.wav",
