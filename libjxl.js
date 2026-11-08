@@ -79,16 +79,15 @@ describe('#libjxl', () => {
   }).timeout(60000);
 
   it('should decode test.jxl to rgb with worker', (done) => {
-    create_test('img',
+    create_pixel_test('img',
       'universal-img_1',
       "mm_solver_minimal_1.0.1",
       "libjxl_1",
       TS + "JXL/test.jxl",
       TS + "out/jxl/canvas.png",
       done,
-      "rgb",
-      false,
-      false);
+      "rgb"
+		);
   }).timeout(60000);
 
   // KNOWN LIMITATION - "rgba" fails for this filter too (and libpng's); see

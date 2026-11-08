@@ -57,16 +57,14 @@ describe('#libpng', () => {
 	// }).timeout(30000);
 
 	it('should decode Freedom.png to rgb with worker', (done) => {
-		create_test('img',
+		create_pixel_test('img',
 			'universal-img_1',
 			"mm_solver_minimal_1.0.1",
 			"libpng_1",
 			TS + "Freedom.png",
 			TS + "out/libpng/Freedom-canvas.png",
 			done,
-			"rgb",
-			false,
-			false
+			"rgb"
 		);
 	}).timeout(30000);
 
@@ -100,16 +98,14 @@ describe('#libpng', () => {
 	// }).timeout(30000);
 
 	it('should decode owl.png to rgb with worker', (done) => {
-		create_test('img',
+		create_pixel_test('img',
 			'universal-img_1',
 			"mm_solver_minimal_1.0.1",
 			"libpng_1",
 			TS + "owl.png",
 			TS + "out/libpng/owl-canvas.png",
 			done,
-			"rgb",
-			false,
-			false
+			"rgb"
 		);
 	}).timeout(30000);
 
