@@ -8,7 +8,7 @@ describe('#libOpenVVC', () => {
 	it('should decode NovosobornayaSquare_640x360.mp4 with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"libOpenVVC_1;isobmff_1;libx264_1",
 			TS + "VVC/NovosobornayaSquare_640x360.mp4",
 			null,

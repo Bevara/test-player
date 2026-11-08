@@ -13,7 +13,7 @@ describe('#libtta', () => {
 	// second rather than letting it corrupt the first. And libtta uses
 	// setjmp/longjmp, so the module imports invoke_i, invoke_ii, invoke_iii and
 	// invoke_iiii; mm_solver_minimal_1.0.1's glue defines all four (it carries a much
-	// richer set than mm_solver_1.0.1, which has only three trampolines in total).
+	// richer set than mm_solver_1.0.4, which has only three trampolines in total).
 	it('should decode testcard.tta to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',

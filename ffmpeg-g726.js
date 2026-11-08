@@ -17,7 +17,7 @@ describe('#ffmpeg-g726', () => {
 	// 24 kbit/s, so the Sun code cannot serve as a G.726 decoder and this is
 	// ffmpeg reduced to the two G.726 decoders - 264 Ko.
 	//
-	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: the module needs about twenty libc
+	// mm_solver_1.0.4, not mm_solver_minimal_1.0.1: the module needs about twenty libc
 	// symbols the minimal solver does not export - fdopen, iconv_close, the
 	// long double helpers - and reportUndefinedSymbols fails the load rather
 	// than saying so.
@@ -33,7 +33,7 @@ describe('#ffmpeg-g726', () => {
 	it('should decode testcard.g726 to wav with worker', (done) => {
 		create_test('audio',
 			'universal-audio_1',
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"ffmpeg-g726_1",
 			TS + "G726/testcard.g726",
 			TS + "out/ffmpeg-g726/testcard.wav",

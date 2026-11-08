@@ -28,7 +28,7 @@ describe('#libmidi', () => {
 	// it('should decode test.mid to wav with worker', (done) => {
 	// 	create_test('audio',
 	// 		'universal-audio_1',
-	// 		"mm_solver_1.0.1",
+	// 		"mm_solver_1.0.4",
 	// 		"libmidi_1",
 	// 		TS + "midi/test.mid",
   //     TS + "out/libmidi/test.wav",

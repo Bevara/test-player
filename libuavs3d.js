@@ -5,7 +5,7 @@ describe('#libuavs3d', () => {
 	// graph regardless of what is being tested, and the check is functional -
 	// no hash reference - that frames traverse the chain to the encoder.
 	//
-	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.4, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	//
 	// About the signal: AVS3/SFTI_640x360.bin holds 600 picture start codes but
@@ -15,7 +15,7 @@ describe('#libuavs3d', () => {
 	// therefore checks what it can: that a video track reaches the output mp4.
 	it('should decode SFTI_640x360.avs3 with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"libuavs3d_1;isobmff_1;libx264_1",
 			TS + "AVS3/SFTI_640x360.avs3",
 			done,

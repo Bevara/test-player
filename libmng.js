@@ -45,7 +45,7 @@ describe('#libmng', () => {
 	it('should decode animated_4frames.mng through the video path with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"libmng_1;libx264_1",
 			TS + "MNG/animated_4frames.mng",
 			null,

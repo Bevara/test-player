@@ -13,11 +13,11 @@ describe('#ffmpeg-ffv1', () => {
 	// re-encoding: 50 frames of 320x180, 63.4 dB PSNR against a native ffmpeg
 	// decode of the same file.
 	//
-	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.4, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	it('should decode testcard.avi (FFV1) with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"avidmx_1;ffmpeg-ffv1_1;isobmff_1;libx264_1",
 			TS + "FFV1/testcard.avi",
 			done,

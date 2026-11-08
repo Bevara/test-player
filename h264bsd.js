@@ -27,11 +27,11 @@ describe('#h264bsd', () => {
 	// come out, at 61.7 dB PSNR against a native ffmpeg decode of the same
 	// file - the difference x264's own re-encoding accounts for.
 	//
-	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.4, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	it('should decode testcard.mp4 (H.264 baseline) with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"isobmff_1;h264bsd_1;libx264_1",
 			TS + "H264/testcard.mp4",
 			done,

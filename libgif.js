@@ -25,7 +25,7 @@ describe('#libgif', () => {
 	it('should decode animated_8frames.gif through the video path with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"libgif_1;libx264_1",
 			TS + "GIF/animated_8frames.gif",
 			null,

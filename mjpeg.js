@@ -13,7 +13,7 @@ describe('#mjpeg', () => {
 	//    x264 takes planar YUV. Every still-image decoder in this build has the
 	//    same output, so that filter is not specific to this chain.
 	//
-	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.4, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	//
 	// Where the numbers come from: 50 frames of 320x180 encoded by ffmpeg's
@@ -32,7 +32,7 @@ describe('#mjpeg', () => {
 	// the decoder declares at configure time - before a frame has been read.
 	it('should decode testcard.avi with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"avidmx_1;libjpeg_1;rgbyuv_1;isobmff_1;libx264_1",
 			TS + "MJPEG/testcard.avi",
 			done,

@@ -20,7 +20,7 @@ describe('#avif', () => {
 	it('should decode example.avif to rgb with worker', (done) => {
 		create_test('img',
 			'universal-img_1',
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"avif_1;libaom_1",
 			TS + "heif/example.avif",
 			null,

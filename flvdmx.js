@@ -28,7 +28,7 @@ describe('#flvdmx', () => {
 	// AudioSpecificConfig.
 	it('should decode sample_640x360.flv (Sorenson H.263) with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"flvdmx_1;ffmpeg-h26x_1;isobmff_1;libx264_1",
 			TS + "FLV/sample_640x360.flv",
 			done,
@@ -38,7 +38,7 @@ describe('#flvdmx', () => {
 
 	it('should decode sample_960x400_ocean_with_audio.flv (Sorenson H.263 + MP3) with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"flvdmx_1;ffmpeg-h26x_1;libmad_1;isobmff_1;libx264_1",
 			TS + "FLV/sample_960x400_ocean_with_audio.flv",
 			done,
@@ -48,7 +48,7 @@ describe('#flvdmx', () => {
 
 	it('should decode testcard_avc_aac.flv (AVC + AAC) with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"flvdmx_1;h264bsd_1;isobmff_1;libx264_1",
 			TS + "FLV/testcard_avc_aac.flv",
 			done,

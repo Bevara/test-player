@@ -4,7 +4,7 @@ describe('#libxevd', () => {
 	// decoder always needs the encoder (libx264_1) and the mp4 muxer
 	// (isobmff_1) in the graph, and the check is functional.
 	//
-	// mm_solver_1.0.1, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
+	// mm_solver_1.0.4, not mm_solver_minimal_1.0.1: isobmff needs about fifty GPAC symbols
 	// the minimal solver does not export (see libalac.js for the detail).
 	//
 	// The signal is 50 frames of 320x180 encoded with a natively built xeve,
@@ -17,7 +17,7 @@ describe('#libxevd', () => {
 	// the filter reads that through xevd_info() rather than by hand.
 	it('should decode testcard.evc with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"libxevd_1;isobmff_1;libx264_1",
 			TS + "EVC/testcard.evc",
 			done,

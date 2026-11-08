@@ -5,7 +5,7 @@ describe('#theora', () => {
 	// with both a video and an audio (vorbis) track.
 	it('should transcode Big_Buck_Bunny_Trailer_400p.ogv to mp4 with worker', (done) => {
 		create_structural_video_test(
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"ogg_1;vorbis_1;theora_1;isobmff_1;libx264_1",
 			"https://bevara.ddns.net/test-signals/ogv/Big_Buck_Bunny_Trailer_400p.ogv",
 			done,

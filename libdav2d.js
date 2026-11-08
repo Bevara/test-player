@@ -14,7 +14,7 @@ describe('#libdav2d', () => {
 	it('should decode avm-v15.0.0-bus.352x288.l10.deltaq1.obu with worker', (done) => {
 		create_test('video',
 			'universal-video_1',
-			"mm_solver_1.0.1",
+			"mm_solver_1.0.4",
 			"libdav2d_1;isobmff_1;libx264_1",
 			TS + "AV2/avm-v15.0.0-bus.352x288.l10.deltaq1.obu",
 			null,
